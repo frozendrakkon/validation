@@ -1,0 +1,30 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container input {
+  border-radius: 10%;
+  background-color: #a0f74e;
+  border: 2px solid black;
+  font-size: 1.3em;
+  width: 20%;
+  padding: 1% 0 1% 1%;
+  margin: 1% 0 1% 0;
+}
+
+.container button {
+  width: 50%;
+  border-radius: 50% 0 50% 0;
+  border: 2px solid black;
+  font-size: 1.5em;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #f0de3d;
+}
+/*# sourceMappingURL=style.css.map */
