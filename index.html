@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Validation</title>
-  </head>
-  <body>
-    <div class="container">
-      <input id="number" type="text" value="+7-917-902-21-65" />
-      <input id="name" type="text" value="Имя" />
-      <input id="last-name" type="text" value="Фамилия" />
-      <input id="date" type="text" value="01.03.1985" />
-      <input id="number" type="text" value="+7-917-902-21-65" />
-      <button id="check">Check</button>
-    </div>
 
-    <script src="./code.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Validation</title>
+</head>
+
+<body>
+  <div class="container">
+    <form name="dataUser" class="form-container">
+      <input name="number" id="number" value="+7(903)888-88-88" type="text" placeholder="+7-917-902-21-65" />
+      <!-- <input name="name" id="name" type="text" placeholder="Имя" />
+      <input name="lastName" id="last-name" type="text" placeholder="Фамилия" />
+      <input name="date" id="date" type="text" placeholder="01.03.1985" />
+      <input name="email" id="email" type="text" placeholder="Электронная почта" /> -->
+      <input type="submit" value="отправить" id="check"></input>
+    </form>
+  </div>
+
+  <script src="./code.js"></script>
+</body>
+
 </html>

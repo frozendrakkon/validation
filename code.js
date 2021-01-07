@@ -1,14 +1,38 @@
 const numberInput = document.getElementById("number")
 const nameInput = document.getElementById("name")
 const lastNameInput = document.getElementById("last-name")
-const dateInput = document.getElementById("date")
-const Input = document.getElementById("number")
+const dateBirthInput = document.getElementById("date")
+const emailInput = document.getElementById("email")
 
-const checkBtn = document.getElementById("check")
+const numberRegularExpression = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/
 
-function deleteRENAME(someInput) {
-    someInput.onclick = function() {
-        someInput.innerHTML = "ss"
+numberInput.onblur = function() {
+    const valid = numberRegularExpression.test(numberInput.value)
+    if(valid) {
+        console.log("ye")
+        numberInput.classList.add("success")
+    } else {
+        numberInput.classList.add("danger")
+        console.log("ey")
     }
-}
-deleteRENAME(numberInput)
+} //! Делает что-то после потери фокусировки
+
+
+
+// function validationHandler() {
+//     document.forms.dataUser.onsubmit = function () {
+        
+//         const numberVal = numberInput.value;
+//         const nameVal = nameInput.value;
+//         const lastNameVal = lastNameInput.value;
+//         const dataBirthVal = dateBirthInput.value;
+//         const emailVal = emailInput.value;
+
+//         function checkNumber() {}
+//         function checkName() {}
+//         function checkLastName() {}
+//         function checkDateBirth() {}
+//         function checkEmail() {}
+//     }
+// }
+//     validationHandler()
