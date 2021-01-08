@@ -1,28 +1,14 @@
 .form-container {
-  display: flex;
-  flex-direction: column;
+  width: 80%;
+  margin: 10% auto;
 }
 
 .form-container input {
-  border-radius: 10%;
-  background-color: #f0de3d;
   border: 2px solid black;
+  width: 18%;
   font-size: 1.3em;
-  width: 20%;
   padding: 1% 0 1% 1%;
   margin: 1% 0 1% 0;
-}
-
-.form-container input:last-child {
-  width: 50%;
-  border-radius: 50% 0 50% 0;
-  border: 2px solid black;
-  font-size: 1.5em;
-  outline: none;
-  height: 70px;
-  margin: 0 auto;
-  cursor: pointer;
-  background-color: #f0de3d;
 }
 
 .form-container input:active, .form-container input:focus {
@@ -30,17 +16,16 @@
   cursor: pointer;
 }
 
-.form-container input:hover {
-  background-color: #faed79;
-}
-
 .form-container .danger {
   border: 2px solid red;
-  background-color: #fff;
 }
 
 .form-container .success {
   border: 2px solid #26e63f;
-  background-color: #26e63f;
+}
+
+.form-container .submit:hover {
+  background-color: #34e6c8;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
