@@ -43,16 +43,16 @@ const checkEmail = emailInput.onblur = function () {
 }
 
 
-function DeleteStateBtnSuccessDanger(InputForm) {
+function deleteStateBtnSuccessDanger(InputForm) {
     InputForm.classList.remove("danger")
     InputForm.classList.remove("success")
 }
 
-numberInput.onfocus = (() => DeleteStateBtnSuccessDanger(numberInput));
-nameInput.onfocus = (() => DeleteStateBtnSuccessDanger(nameInput));
-lastNameInput.onfocus = (() => DeleteStateBtnSuccessDanger(lastNameInput));
-dateBirthInput.onfocus = (() => DeleteStateBtnSuccessDanger(dateBirthInput));
-emailInput.onfocus = (() => DeleteStateBtnSuccessDanger(emailInput));
+numberInput.onfocus = (() => deleteStateBtnSuccessDanger(numberInput));
+nameInput.onfocus = (() => deleteStateBtnSuccessDanger(nameInput));
+lastNameInput.onfocus = (() => deleteStateBtnSuccessDanger(lastNameInput));
+dateBirthInput.onfocus = (() => deleteStateBtnSuccessDanger(dateBirthInput));
+emailInput.onfocus = (() => deleteStateBtnSuccessDanger(emailInput));
 
 
 function addStateBtnSuccessDangerNumber(inputForm, checkForm) {
