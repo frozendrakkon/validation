@@ -1,19 +1,20 @@
-.form-container {
-  width: 80%;
-  margin: 10% auto;
+.form-container p {
+  font-size: 1.5em;
 }
 
 .form-container input {
   border: 2px solid black;
-  width: 18%;
-  font-size: 1.3em;
+  font-size: 1.2em;
   padding: 1% 0 1% 1%;
-  margin: 1% 0 1% 0;
 }
 
 .form-container input:active, .form-container input:focus {
   outline: none;
   cursor: pointer;
+}
+
+.form-container input:last-child {
+  width: 265px;
 }
 
 .form-container .danger {
